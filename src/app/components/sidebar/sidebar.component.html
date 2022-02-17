@@ -1,0 +1,102 @@
+<div class="logo">
+  <a routerLink="/" class="simple-text">
+    <div class="logo-img">
+      <img src="/assets/img/stoplight.svg" />
+    </div>
+    STS Chain
+  </a>
+  <div style="text-align: center;">
+    <a style="font-size: 10px;">Identity: {{wallet.name}}</a>
+  </div>
+</div>
+
+
+
+<div class="sidebar-wrapper">
+  <ul class="nav" *ngIf="authService.isAuthenticated()">
+    <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+      <a class="nav-link" [routerLink]="[menuItem.path]">
+        <i class="material-icons">{{menuItem.icon}}</i>
+        <p>{{menuItem.title}}</p>
+      </a>
+    </li>
+  </ul>
+  <ul *ngIf="!authService.isAuthenticated()" class="nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/signin">
+        <i class="material-icons">open_in_browser</i>
+        <span>Log In</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/signup">
+        <i class="material-icons">fingerprint</i>
+        <span>Sign Up</span>
+      </a>
+    </li>
+  </ul>
+  <div *ngIf="isMobileMenu() && authService.isAuthenticated()">
+    <form class="navbar-form">
+      <span class="bmd-form-group">
+        <div class="input-group no-border">
+          <input type="text" value="" class="form-control" placeholder="Search...">
+          <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon" [disabled]="true">
+            <i class="material-icons">search</i>
+            <div class="ripple-container"></div>
+          </button>
+        </div>
+      </span>
+    </form>
+    <ul class="nav navbar-nav nav-mobile-menu">
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="material-icons">dashboard</i>
+          <p>
+            <span class="d-lg-none d-md-block">Stats</span>
+          </p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="material-icons">lock</i>
+          <p>
+            <span class="d-lg-none d-md-block">Stats</span>
+          </p>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="material-icons">notifications</i>
+          <span class="notification">5</span>
+          <p>
+            <span class="d-lg-none d-md-block">Tasks</span>
+          </p>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item">Approve</a>
+          <a class="dropdown-item">Exempt List </a>
+          <a class="dropdown-item">Resolve Items</a>
+          <a class="dropdown-item">Reconciliations</a>
+          <a class="dropdown-item">Notify Agencies</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" >
+          <i class="material-icons">person</i>
+          <p>
+            <span class="d-lg-none d-md-block">Account</span>
+          </p>
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="authService.isAuthenticated()">
+          <a class="nav-link" style="cursor: pointer;" (click)="onLogout()">
+            <i class="material-icons">lock</i>
+            <p>
+              <span class="d-lg-none d-md-block">Log Out</span>
+            </p>
+          </a>
+        </li>
+    </ul>
+
+  </div>
+</div>

@@ -1,0 +1,51 @@
+
+
+
+
+<div class="card">
+    <div class="card-header card-header-success">
+      <h4 class="card-title">Importer: {{ importer.companyName }}</h4>
+      <p class="card-category"></p>
+    </div>
+    <div class="card-body">
+      <div class="card card-stats">
+        <div class="card-header card-header-success card-header-icon">
+          <div class="card-icon">
+            <i class="material-icons">content_copy</i>
+          </div>
+          <p class="card-category">Importer ID: {{ importer.importerId }}</p>
+          <p class="card-category">Company Name: {{ importer.companyID }}</p>
+          <p class="card-title">Company Activity: {{ importer.companyActivity }}
+              <p class="card-title">Country: {{ importer.address.country }}    </p>
+        </div>
+        <p class="card-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorem fuga illum officiis repudiandae, est maxime autem
+            odit dicta voluptas quod commodi. Eius autem, alias possimus deleniti hic repellendus maxime.
+          </p>
+
+        <div class="card-footer">
+          <div class="stats">
+            <!-- <i class="material-icons text-danger">touch_app</i>
+              <a style="cursor: pointer;" [routerLink]="[index]" routerLinkActive="active" class="list-group-item clearfix">{{ importer.listingtId }} -->
+            <!-- </a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group" appDropdown>
+        <button type="button" class="btn btn-success dropdown-toggle">
+          Manage
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a (click)="showNotification()">Edit Details</a>
+          </li>
+          <li>
+            <a [routerLink]="['/productListingContract']">Manage Listings</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>

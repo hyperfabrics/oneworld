@@ -1,0 +1,47 @@
+{
+  "$class": "com.stschain.chemicals.Supplier",
+  "supplierId": "supplierA",
+  "countryId": "UK",
+  "orgId": "ACME",
+  "companyID": "co-12",
+  "companyName": "Supplier One One",
+  "companyActivity": "Industrial Chemicals",
+  "employees": [
+    {
+      "$class": "com.stschain.chemicals.Person",
+      "firstName": "Jim",
+      "lastName": "John"
+    },
+    {
+      "$class": "com.stschain.chemicals.Person",
+      "firstName": "K.N"
+    },
+    {
+      "$class": "com.stschain.chemicals.Person",
+      "firstName": "C.G"
+    }
+  ],
+  "address": {
+    "$class": "com.stschain.chemicals.Address",
+    "city": "",
+    "country": "",
+    "locality": "https://www.ydesignservices.com/wp-content/uploads/2016/07/Googlemap-600x551.jpg",
+    "region": "",
+    "street": "",
+    "postalCode": "",
+    "zipCode": "",
+    "postOfficeBoxNumber": ""
+  },
+  "identity": {
+    "$class": "com.stschain.chemicals.BusinessIdentity",
+    "id": "",
+    "idType": "",
+    "idHash": "",
+    "registrationDoc": "",
+    "registrationDocHash": "",
+    "registrationSignature": "",
+    "registrationSiginingAuth": "",
+    "identityExpiryDate": ""
+  },
+  "civilDefenceNumber": "civilDefenceNumber"
+}

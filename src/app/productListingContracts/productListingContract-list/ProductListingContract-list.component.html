@@ -1,0 +1,8 @@
+<div class="row card-group">
+  <app-productListingContract-item
+    class="col-lg-6 col-md-12"
+    *ngFor="let productListingContractEl of allAssets; let i = index"
+    [productListingContract]="productListingContractEl"
+    [index]="productListingContractEl.listingtId">
+  </app-productListingContract-item>
+</div>

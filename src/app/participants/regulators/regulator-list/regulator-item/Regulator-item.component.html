@@ -1,0 +1,57 @@
+<div class="card">
+  <div class="card-header card-header-warning">
+    <h4 class="card-title">regulator: {{ regulator.ministryName }}</h4>
+    <p class="card-category"></p>
+  </div>
+  <div class="card-body">
+    <div class="card card-stats">
+      <div class="card-header card-header-warning card-header-icon">
+        <div class="card-icon">
+          <i class="material-icons">content_copy</i>
+        </div>
+        <p class="card-category">Regulator ID: {{ regulator.regulatorId }}</p>
+        <p class="card-category">ministryName Name: {{ regulator.ministryName }}</p>
+        <p class="card-title">ministry Code: {{ regulator.ministryCode }}</p>
+      </div>
+
+
+      <table *ngIf="Employees()" class="table table-hover">
+        <thead class="text-warning">
+          <th>Contact ID</th>
+          <th>Contact Name</th>
+          <th>Contact Details</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let contact of regulator.Employees">
+            <td>{{ contact.productId }}</td>
+            <td>{{ contact.quantity }} </td>
+            <td>{{ contact.countryId }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="card-footer">
+        <div class="stats">
+          <!-- <i class="material-icons text-danger">touch_app</i>
+              <a style="cursor: pointer;" [routerLink]="[index]" routerLinkActive="active" class="list-group-item clearfix">{{ regulator.listingtId }} -->
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-group" appDropdown>
+      <button type="button" class="btn btn-warning dropdown-toggle">
+        Manage
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a (click)="showNotification()">Edit Details</a>
+        </li>
+        <li>
+          <a [routerLink]="['/productListingContract']">Manage Listings</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

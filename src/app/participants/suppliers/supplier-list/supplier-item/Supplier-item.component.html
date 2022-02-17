@@ -1,0 +1,32 @@
+<div class="card card-profile">
+  <div class="card-avatar">
+    <a>
+      <!-- <img class="img" src="../assets/img/faces/marc.jpg" /> -->
+      <img [src]="supplier.address.locality" alt="{{ supplier.name }}" class="img" style="max-height: 100px;">
+    </a>
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">{{ supplier?.companyName }}</h4>
+    <h4 class="card-title">Supplier ID{{ supplier?.supplierId }}</h4>
+    <h6 class="card-category text-gray">{{ supplier?.companyActivity }}</h6>
+    <p class="card-description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorem fuga illum officiis repudiandae, est maxime autem
+      odit dicta voluptas quod commodi. Eius autem, alias possimus deleniti hic repellendus maxime.
+    </p>
+
+    <div class="btn-group" appDropdown>
+      <button type="button" class="btn btn-primary dropdown-toggle">
+        Manage
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a (click)="showNotification()">Edit Details</a>
+        </li>
+        <li>
+          <a [routerLink]="['/productListingContract']">Manage Listings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+

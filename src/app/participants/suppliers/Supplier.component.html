@@ -1,0 +1,9 @@
+
+<h1 *ngIf="isEmptyList()">
+  You don't have access to this list of Suppliers</h1>
+
+  <div *ngIf="!isEmptyList()" class="main-content">
+    <app-supplier-list></app-supplier-list>
+  </div>
+
+

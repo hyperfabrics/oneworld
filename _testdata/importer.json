@@ -1,0 +1,44 @@
+{
+  "$class": "com.stschain.chemicals.Importer",
+  "importerId": "importerA",
+  "companyID": "importerA_001",
+  "companyName": "Imports Limited",
+  "companyActivity": "Chemical Imports",
+  "employees": [{
+      "$class": "com.stschain.chemicals.Person",
+      "firstName": "nasser",
+      "lastName": "Rahal"
+    },
+    {
+      "$class": "com.stschain.chemicals.Person",
+      "firstName": "Mo"
+    },
+    {
+      "$class": "com.stschain.chemicals.Person",
+      "firstName": "Majd"
+    }
+  ],
+  "address": {
+    "$class": "com.stschain.chemicals.Address",
+    "city": "Jeddah",
+    "country": "KSA",
+    "locality": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Casa_Grande_Improvement_Company_Limited%2C_Territory_of_Arizona_50_share_certificate.jpg",
+    "region": "region",
+    "street": "street",
+    "postalCode": "postalCode",
+    "zipCode": "",
+    "postOfficeBoxNumber": ""
+  },
+  "identity": {
+    "$class": "com.stschain.chemicals.BusinessIdentity",
+    "id": "ID Secret",
+    "idType": "exempt",
+    "idHash": "23423234234234234234234234234",
+    "registrationDoc": "",
+    "registrationDocHash": "",
+    "registrationSignature": "",
+    "registrationSiginingAuth": "",
+    "identityExpiryDate": ""
+  },
+  "civilDefenceNumber": "234"
+}

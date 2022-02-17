@@ -1,0 +1,13 @@
+<div class="row card-group">
+    <app-importer-item
+      class="col-lg-6 col-md-12"
+      *ngFor="let importerEl of allParticipants; let i = index"
+      [importer]="importerEl"
+      [index]="importerEl.importerId">
+    </app-importer-item>
+  </div>
+
+
+
+
+

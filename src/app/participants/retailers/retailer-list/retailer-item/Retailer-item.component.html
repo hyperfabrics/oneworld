@@ -1,0 +1,59 @@
+<div class="card">
+  <div class="card-header card-header-accent">
+    <h4 class="card-title">Retailer: {{ retailer.companyName }}</h4>
+    <p class="card-category"></p>
+  </div>
+  <div class="card-body">
+    <div class="card card-stats">
+      <div class="card-header card-header-primary card-header-icon">
+        <div class="card-icon">
+          <i class="material-icons">content_copy</i>
+        </div>
+        <p class="card-category">Retailer ID: {{ retailer.retailerId }}</p>
+        <p class="card-category">Company Name: {{ retailer.companyName }}</p>
+        <p class="card-title">Company Activity: {{ retailer.companyActivity }}
+          <small></small>
+        </p>
+      </div>
+
+      <table *ngIf="productsExist()" class="table table-hover">
+        <thead class="text-primary">
+          <th>Product ID</th>
+          <th>Product Quantity</th>
+          <th>Product countryId</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of retailer.products">
+            <td>{{ product.productId }}</td>
+            <td>{{ product.quantity }} </td>
+            <td>{{ product.countryId }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card-footer">
+        <div class="stats">
+          <!-- <i class="material-icons text-danger">touch_app</i>
+            <a style="cursor: pointer;" [routerLink]="[index]" routerLinkActive="active" class="list-group-item clearfix">{{ retailer.listingtId }} -->
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-group" appDropdown>
+      <button type="button" class="btn btn-primary dropdown-toggle">
+        Manage
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a (click)="showNotification()">Edit Details</a>
+        </li>
+        <li>
+          <a [routerLink]="['/productListingContract']">Manage Listings</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

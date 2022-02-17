@@ -1,0 +1,10 @@
+<div class="row card-group">
+    <app-retailer-item
+      class="col-lg-6 col-md-12"
+      *ngFor="let retailerEl of allParticipants; let i = index"
+      [retailer]="retailerEl"
+      [index]="retailerEl.retailerId">
+    </app-retailer-item>
+  </div>
+
+

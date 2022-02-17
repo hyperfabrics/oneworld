@@ -1,0 +1,124 @@
+{
+  "$class": "com.stschain.chemicals.Retailer",
+  "retailerId": "retailerA",
+  "products": [{
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "prodA",
+      "quantity": "5",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "prodB",
+      "quantity": "2",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Propane",
+      "quantity": " 100",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Zink",
+      "quantity": " 300",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Acid",
+      "quantity": " 300",
+      "countryId": "USA"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Nitrate",
+      "quantity": " 450",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "prodABC",
+      "quantity": "5",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "BALLS",
+      "quantity": "50",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "prodA",
+      "quantity": "5",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "prodB",
+      "quantity": "2",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Tomatos",
+      "quantity": "500",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Juice",
+      "quantity": "2000",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Tomatos",
+      "quantity": "500",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Juice",
+      "quantity": "2000",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Tomatos",
+      "quantity": "500",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Juice",
+      "quantity": "2000",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Tomatos",
+      "quantity": "500",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "Juice",
+      "quantity": "2000",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "gggg",
+      "quantity": "7",
+      "countryId": "UK"
+    }
+  ],
+  "companyID": "retailerA-444",
+  "companyName": "Some Company",
+  "companyActivity": "Chemicals",
+  "employees": [],
+  "civilDefenceNumber": "123"
+}

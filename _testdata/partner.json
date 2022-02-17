@@ -1,0 +1,5 @@
+{
+  "$class": "com.stschain.chemicals.Partner",
+  "url": "www.sadad.com",
+  "description": "Sadad Payment Gateway"
+}

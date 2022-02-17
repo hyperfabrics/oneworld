@@ -1,0 +1,20 @@
+{
+  "$class": "com.stschain.chemicals.ProductListingContract",
+  "listingtId": "pl1",
+  "status": "CHECKCOMPLETED",
+  "products": [{
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "prodA",
+      "quantity": "5",
+      "countryId": "UK"
+    },
+    {
+      "$class": "com.stschain.chemicals.Product",
+      "productId": "prodB",
+      "quantity": "2",
+      "countryId": "UK"
+    }
+  ],
+  "owner": "resource:com.stschain.chemicals.Retailer#retailerUI",
+  "supplier": "resource:com.stschain.chemicals.Supplier#supplierA"
+}

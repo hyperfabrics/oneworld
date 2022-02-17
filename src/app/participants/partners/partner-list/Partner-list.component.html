@@ -1,0 +1,10 @@
+<div class="row card-group">
+    <app-partner-item
+      class="col-lg-4 col-md-6 col-sm-12"
+      *ngFor="let partnerEl of allParticipants; let i = index"
+      [partner]="partnerEl"
+      [index]="partnerEl.partnerId">
+    </app-partner-item>
+  </div>
+
+

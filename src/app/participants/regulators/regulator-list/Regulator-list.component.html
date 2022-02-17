@@ -1,0 +1,10 @@
+<div class="row card-group">
+    <app-regulator-item
+      class="col-lg-6 col-md-12"
+      *ngFor="let regulatorEl of allParticipants; let i = index"
+      [regulator]="regulatorEl"
+      [index]="regulatorEl.regulatorId">
+    </app-regulator-item>
+  </div>
+
+

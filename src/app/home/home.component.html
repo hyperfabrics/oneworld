@@ -1,0 +1,64 @@
+<ng-template [ngIf]="!authService.isAuthenticated()">
+	<h1 class="heading">Welcome to STS Chain</h1>
+	<h1>Please login to access the features</h1>
+</ng-template>
+
+<div *ngIf="authService.isAuthenticated()" class="container">
+	<div class="row">
+		<h1 class="heading">Welcome to Decentralized Supplychain on the Blockchain</h1>
+	</div>
+
+	<div class="row">
+		<br>
+	</div>
+
+	<div class="row bodytext">
+		<div class="col-md-12">
+			<p class=""> This Page gives you a summary of the functionality </p>
+			<p class=""> Find more detail
+				<a [routerLink]="['/About']"> about the application. </a>
+			</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<br>
+	</div>
+
+
+	<div class="row">
+		<div class="participant col-md-12">
+			<a [routerLink]="['/productListingContract']" class=participantButton>Open Bids</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<br>
+	</div>
+
+
+	<div class="row">
+		<h4>Participants Zone</h4>
+	</div>
+	<div class="row">
+		<div class="participant col-md-3">
+			<a [routerLink]="['/supplier']" class="participantButton">Suppliers</a>
+		</div>
+		<div class="participant col-md-3">
+				<a [routerLink]="['/importer']" class=participantButton>Importers</a>
+			</div>
+	<div class="participant col-md-3">
+		<a [routerLink]="['/retailer']" class=participantButton>Retailers</a>
+	</div>
+<div class="participant col-md-3">
+	<a [routerLink]="['/regulator']" class=participantButton>Regulators</a>
+</div>
+</div>
+	<div class="row">
+		<br>
+	</div>
+	<div class="row">
+		<br>
+	</div>
+
+</div>

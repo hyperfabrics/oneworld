@@ -1,0 +1,45 @@
+<div class="card">
+  <div class="card-header card-header-info">
+    <h4 class="card-title">Partner: {{ partner.url }}</h4>
+    <p class="card-category"></p>
+  </div>
+  <div class="card-body">
+    <div class="card card-stats">
+      <div class="card-header card-header-info card-header-icon">
+        <div class="card-icon">
+          <i class="material-icons">content_copy</i>
+        </div>
+        <!-- <p class="card-category">Partner ID: {{ partner.partnerId }}</p> -->
+        <small></small>
+      </div>
+      <p class="card-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorem fuga illum officiis repudiandae, est maxime autem
+        odit dicta voluptas quod commodi. Eius autem, alias possimus deleniti hic repellendus maxime.
+      </p>
+
+      <div class="card-footer">
+        <div class="stats">
+          <!-- <i class="material-icons text-danger">touch_app</i>
+              <a style="cursor: pointer;" [routerLink]="[index]" routerLinkActive="active" class="list-group-item clearfix">{{ partner.listingtId }} -->
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-group" appDropdown>
+      <button type="button" class="btn btn-info dropdown-toggle">
+        Manage
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a (click)="showNotification()">Edit Details</a>
+        </li>
+        <li>
+          <a [routerLink]="['/productListingContract']">Manage Listings</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

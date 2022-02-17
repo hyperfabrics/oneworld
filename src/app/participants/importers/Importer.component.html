@@ -1,0 +1,7 @@
+
+<h1 *ngIf="isEmptyList()">
+    You don't have access to this list of importers</h1>
+
+    <div *ngIf="!isEmptyList()" class="main-content">
+      <app-importer-list></app-importer-list>
+    </div>

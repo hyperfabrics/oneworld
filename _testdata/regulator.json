@@ -1,0 +1,35 @@
+{
+  "$class": "com.stschain.chemicals.Regulator",
+  "regulatorId": "regulatorA",
+  "exemptedOrgIds": [],
+  "exemptedProductIds": [],
+  "ministryCode": "",
+  "ministryName": "",
+  "Employees": [{
+    "$class": "com.stschain.chemicals.Person",
+    "firstName": "Nasser",
+    "lastName": "Rahal"
+  }],
+  "address": {
+    "$class": "com.stschain.chemicals.Address",
+    "city": "",
+    "country": "",
+    "locality": "",
+    "region": "",
+    "street": "",
+    "postalCode": "",
+    "zipCode": "",
+    "postOfficeBoxNumber": ""
+  },
+  "identity": {
+    "$class": "com.stschain.chemicals.BusinessIdentity",
+    "id": "",
+    "idType": "",
+    "idHash": "",
+    "registrationDoc": "",
+    "registrationDocHash": "",
+    "registrationSignature": "",
+    "registrationSiginingAuth": "",
+    "identityExpiryDate": ""
+  }
+}

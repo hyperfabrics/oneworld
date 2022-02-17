@@ -1,0 +1,98 @@
+<nav class="navbar navbar-inverse navbar2">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand">
+				<!-- <img style="max-width:40px; margin-top: -10px;" [src]="logo"> -->
+			</a>
+			<a routerLink="/" class="navbar-brand">STS Chain</a>
+			<span style="font-size: 10px;">Identity: {{wallet.name}}</span>
+		</div>
+		<ul *ngIf="authService.isAuthenticated()" class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a class="dropdown-toggle navfont" data-toggle="dropdown" href="#">Participants
+					<span class="caret navfont"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a [routerLink]="['/retailer']">Retailer</a>
+					</li>
+
+					<li>
+						<a [routerLink]="['/importer']">Importer</a>
+					</li>
+
+					<li>
+						<a [routerLink]="['/supplier']">Supplier</a>
+					</li>
+
+					<li>
+						<a [routerLink]="['/partner']">Partner</a>
+					</li>
+
+					<li>
+						<a [routerLink]="['/regulator']">Regulator</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle navfont" data-toggle="dropdown" href="#">Transactions
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a [routerLink]="['/createProductListing']">createProductListing</a>
+					</li>
+					<li>
+						<a [routerLink]="['/transferListing']">transferListing</a>
+					</li>
+					<li>
+						<a [routerLink]="['/checkProducts']">checkProducts</a>
+					</li>
+					<li>
+						<a [routerLink]="['/regulatorAudit']">regulatorAudit</a>
+					</li>
+					<li>
+						<a [routerLink]="['/updateExemptedList']">updateExemptedList</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle navfont" data-toggle="dropdown" href="#">Contracts
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a [routerLink]="['/productListingContract']">List Contracts</a>
+					</li>
+					<li>
+						<a [routerLink]="['/productListingContract']">Edit Contracts</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown navfontAbout">
+				<a class="dropdown-toggle navfont" data-toggle="dropdown" href="#">Info
+					<span class="caret navfont"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a [routerLink]="['/About']">About</a>
+					</li>
+					<li>
+						<a [routerLink]="['/AllTransactions']">Blockchain</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a style="cursor: pointer;" (click)="onLogout()">Logout</a>
+			</li>
+		</ul>
+		<ul *ngIf="!authService.isAuthenticated()" class="nav navbar-nav navbar-right">
+			<li>
+				<a routerLink="/signup">Register</a>
+			</li>
+			<li>
+				<a routerLink="/signin">Login</a>
+			</li>
+		</ul>
+	</div>
+</nav>
